@@ -44,7 +44,7 @@ DocumentRoot "/opt/lampp/htdocs/delta"
 > sudo firefox http://localhost
 ```
 
-![]( Rapport.assets/Capture du 2019-11-19 13:54:10.png)
+![](Rapport.assets/Capture du 2019-11-19 13:54:10.png)
 
 ------
 
