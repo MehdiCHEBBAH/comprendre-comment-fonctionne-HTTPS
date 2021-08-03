@@ -1,7 +1,34 @@
+<div style="text-align:center;font-size:30px">﷽</div>
 
-## Sécuriser l'échange entre un client et un serveur web Apache avec SSL
 
-###  1. Créer un espace de Publication Web Apache
+
+
+
+
+
+
+
+<div style="text-align:center;font-size:48px">Sécuriser l'échange entre un client et un serveur web Apache avec SSL</div>
+
+
+
+
+
+
+
+Travail fait par **CHEBBAH Mehdi** et **HAMMAS Ali Cherif**
+
+---
+
+
+
+# Tableau de Contenue
+
+[TOC]
+
+---
+
+#  1. Créer un espace de Publication Web Apache
 
 1.  **Création du répertoire `delta`**
 
@@ -50,7 +77,7 @@ DocumentRoot "/opt/lampp/htdocs/delta"
 
 
 
-### 2.  Créer un répertoire pour la zone sécurisée
+# 2.  Créer un répertoire pour la zone sécurisée
 
 1.  **Création de du répertoire `secure`:**
 
@@ -83,7 +110,7 @@ DocumentRoot "/opt/lampp/htdocs/delta/secure"
 
 
 
-### 3.  Créer les certificats et les clés pour la CA et le Serveur Web
+# 3.  Créer les certificats et les clés pour la CA et le Serveur Web
 
 1.  **Création du certificat du CA:**
 
@@ -150,7 +177,7 @@ SSLCertificateKeyFile /opt/lampp/etc/delta/cles/serveurkey.pem
 
 
 
-### 4.  Les tests
+# 4.  Les tests
 
 1.  **Redémarrage de `apache`**:
 
@@ -194,9 +221,9 @@ On ajoute le certificat au navigateur. Pour faire on suit les étapes suivantes:
 
 
 
-### 5.  Analyse et comparaison des échanges
+# 5.  Analyse et comparaison des échanges
 
-#### A. Sans authentification du serveur (HTTP)
+### A. Sans authentification du serveur (HTTP)
 
 1.  On remarque que le port utilisé par le serveur est `80` et que le protocole utilisé dans la couche transport pour cette session est `TCP`
 
@@ -218,7 +245,7 @@ En générale la structure de cette session est la suivante
 
 ![](Rapport.assets/DeepinScreenshot_dde-desktop_20191119215408.png)
 
-#### B. Avec authentification du serveur (HTTPS)
+### B. Avec authentification du serveur (HTTPS)
 
 1.  On remarque que le port utilisé par le serveur est `443` et qu'on a utilise deux protocoles dans la couche transport `TCP` et `TLS`
 
@@ -284,7 +311,7 @@ Pour le protocole `SSL`
 
     
 
-### 6.  Ajouter un certificat Client
+# 6.  Ajouter un certificat Client
 
 1.  **Création du certificat du client**
 
