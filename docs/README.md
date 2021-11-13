@@ -16,7 +16,7 @@
 
 
 
-Travail fait par **CHEBBAH Mehdi** et **HAMMAS Ali Cherif**
+Written by **Mehdi CHEBBAH** and **Ali Cherif HAMMAS**
 
 ---
 
@@ -25,6 +25,8 @@ Travail fait par **CHEBBAH Mehdi** et **HAMMAS Ali Cherif**
 # Tableau de Contenue
 
 [TOC]
+
+
 
 ---
 
@@ -71,7 +73,7 @@ DocumentRoot "/opt/lampp/htdocs/delta"
 > sudo firefox http://localhost
 ```
 
-![](assets/Capture du 2019-11-19 13:54:10.png)
+![](assets/Capture du 2019-11-19 2.png)
 
 ------
 
@@ -105,6 +107,8 @@ DocumentRoot "/opt/lampp/htdocs/delta/secure"
 ```bash
 > sudo echo "Hello World, This is a secure HTTP server." > /opt/lampp/htdocs/delta/secure/index.html
 ```
+
+
 
 ---------
 
@@ -193,15 +197,15 @@ SSLCertificateKeyFile /opt/lampp/etc/delta/cles/serveurkey.pem
 
 Firefox va demander si on accepte le certificat du serveur
 
-![firefox demande si accepte le certif](assets/Capture du 2019-11-19 13:58:26.png)
+![firefox demande si accepte le certif](assets/Capture du 2019-11-19 3.png)
 
-![](assets/Capture du 2019-11-19 13:58:38.png)
+![](assets/Capture du 2019-11-19 4.png)
 
 Si on accepte cette certificat la page `index.html` qu'on a inséré a `delta/secure` va être chargé mais avec un avertissement indique que la certificat n'est pas sécurisé.
 
-![la page index.html a le contenu "Hello World, This is a secure HTTP server."](assets/Capture du 2019-11-19 14:01:40.png)
+![la page index.html a le contenu "Hello World, This is a secure HTTP server."](assets/Capture du 2019-11-19 5.png)
 
-![](assets/Capture du 2019-11-19 14:02:06.png)
+![](assets/Capture du 2019-11-19 6.png)
 
 3.  **Exportation du certificat du CA**:
 
@@ -211,11 +215,13 @@ On clique sur l'angle `CA` puis sur `export CA` puis on choisi l'endroit ou on v
 
 On ajoute le certificat au navigateur. Pour faire on suit les étapes suivantes:
 
-![Les image pour ajouter le certificat de CA a firefox](assets/Capture du 2019-11-19 14:25:01.png)
+![Les image pour ajouter le certificat de CA a firefox](assets/Capture du 2019-11-19 7.png)
 
-![](assets/Capture du 2019-11-19 14:26:40.png)
+![](assets/Capture du 2019-11-19 9.png)
 
-![](assets/Capture du 2019-11-19 14:25:41.png)
+![](assets/Capture du 2019-11-19 8.png)
+
+
 
 -------
 
